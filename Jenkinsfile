@@ -5,8 +5,8 @@ pipeline {
             steps {
                 sh 'docker pull ebriceno13/testbuild'
                 sh 'docker pull selenium/hub'
-                sh 'docker pull selenium/chrome'
-                sh 'docker pull selenium/firefox'
+                sh 'docker pull selenium/node-chrome'
+                sh 'docker pull selenium/node-firefox'
             }
         }
         stage('Start Grid') {
